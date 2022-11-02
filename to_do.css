@@ -1,7 +1,7 @@
 :root {
     --primary: rgb(48, 89, 111);
     --business: rgb(228, 155, 18);
-    --personal: var(--primary);
+    --personal: rgb(48, 89, 111);
     --light: rgb(234, 208, 208);
     --grey: #888;
     --dark: rgb(67, 41, 41);
@@ -73,6 +73,7 @@ h4 {
     font-weight: 700;
 }
 
+/* Input for what needs to get done*/
 .create_todo input[type="text"] {
    display: block;
    width: 50%;
@@ -85,11 +86,13 @@ h4 {
    margin-bottom: 1.5rem;
 }
 
+/*Blocks carrying the category business and personal*/
 .create_todo .options {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 1 rem;
+    grid-gap: 6rem;
     margin-bottom: 1.5rem;
+    width: 50%; /* size of category*/
 }
 
 .create_todo .options label {
@@ -104,10 +107,11 @@ h4 {
     cursor: pointer;
 }
 
-input [type="radio"], input [type="checkbox"] {
-    display:none
+input[type="radio"], input[type="checkbox"] {
+    display:none;
 }
 
+/* Button to click on business or personal and to check the todo item on list*/
 .bubble {
     display: flex;
     align-items: center;
@@ -148,12 +152,14 @@ input:checked ~ .bubble::after {
     opacity: 1;
 }
 
+/* Label for business and personal selection under pick a category*/ 
 .create_todo .options label div {
     color: var(--dark);
     font-size: 1.125rem;
     margin-top: 1rem;
 }
 
+/* Submit button to add todo list*/
 .create_todo input[type="submit"] {
     display: block;
     width: 50%;
@@ -185,6 +191,7 @@ input:checked ~ .bubble::after {
     margin-bottom: 1rem;
 }
 
+/*TODO list label placement*/
 .todo_item label {
     display: block;
     margin-right: 1rem;
@@ -195,16 +202,19 @@ input:checked ~ .bubble::after {
     flex: 1 1 0%;
 }
 
+/* Todo List input*/
 .todo_item .todo_content input {
     color: var(--dark);
     font-size: 1.125rem;
 }
 
+/* Makesa Edit and Delete in one line*/
 .todo_item .actions {
     display: flex;
     align-items: center;
 }
 
+/* Style buttons for edit and edit*/
 .todo_item .actions button {
     display: block;
     padding: 0.5rem;
