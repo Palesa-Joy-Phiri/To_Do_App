@@ -3,7 +3,7 @@
     --business: rgb(228, 155, 18);
     --personal: rgb(48, 89, 111);
     --light: rgb(234, 208, 208);
-    --grey: #888;
+    --grey: rgb(79, 75, 75);
     --dark: rgb(67, 41, 41);
     --danger:  #ff5b57;
 
@@ -30,7 +30,7 @@ button, input:not([type="radio"]):not([type="checkbox"]) {
 }
 
 body {
-    background: var(--light);
+    background: rgb(207, 167, 198);
     color: var(--dark);
 
 }
@@ -41,6 +41,20 @@ section {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     margin-left: 30%;
+}
+
+img {
+    width: 60%;
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-top: -12%;
+}
+
+h1 {
+    font-size: 390%;
+    text-align: center;
+    margin-top: -10%;
+    padding-bottom: 5%;
 }
 
 h3 {
